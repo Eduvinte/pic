@@ -1,3 +1,7 @@
+# Link para acceder a la página web
+https://startling-alpaca-ef2515.netlify.app/favorites
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
