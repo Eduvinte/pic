@@ -1,0 +1,25 @@
+#container {
+    @include container_pages()
+}
+
+#fotos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 5%;
+    color: white;
+    filter: brightness(80%);
+    #icon {
+        font-size: 30px;
+
+        &:hover{
+            font-size: 50px;
+            transition: all 0.5s;
+        }
+    }
+    #titulo {
+        font-size: 25px;
+        font-family: $primary_fonts;
+    }
+}

@@ -1,0 +1,16 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+
+// Mixings 
+@import './base/mixis';
+
+// Variables global
+@import './settings/variables';
+
+// Components
+@import './components/header/header';
+@import './components/home/home';
+@import './components/favorites/favorites'
+
+

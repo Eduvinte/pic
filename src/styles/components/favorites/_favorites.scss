@@ -1,0 +1,37 @@
+#container-favorite {
+    @include container_pages();
+
+    #icon-favorites{
+       color: #6ccdeb;
+       font-size: 30px;
+       position: relative;
+       top: -56px;
+       left: -56px;
+
+       &:hover{
+        font-size: 50px;
+        transition: all 0.5s;
+       }
+    }
+}
+#header-favorites{
+    background-color:$four_color;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 2%;
+    color: $two_color;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#label-favorites {
+    font-family: cursive;
+    padding: 5%;
+    #input-favorites {
+        width: 100%;
+        padding: 3%;
+        font-family: cursive;
+        margin-top: 5%;
+    }
+}
+

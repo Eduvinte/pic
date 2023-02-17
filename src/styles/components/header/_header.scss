@@ -1,0 +1,14 @@
+#menu_principal {
+    background-color: $primary_color;
+    padding: 10px;
+    #nav a{
+        color: $two_color;
+        border-radius: 5px;
+        font-family: $primary_fonts;
+
+        &:hover{
+            background-color: $three_color;
+        }
+    }
+
+}
