@@ -1,9 +1,9 @@
 import React, { createContext, useEffect, useState } from 'react'
-const API_KEY = process.env.REACT_APP_API_KEY;
+
 import axios from 'axios'
 
 export const DataContext = createContext({});
-
+const API_KEY = process.env.REACT_APP_API_KEY;
 function DataProvider({ children }){
 
   const [datas, setData] = useState([])
