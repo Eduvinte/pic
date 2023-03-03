@@ -1,4 +1,5 @@
 import React, { createContext, useEffect, useState } from 'react'
+const API_KEY = process.env.REACT_APP_API_KEY;
 import axios from 'axios'
 
 export const DataContext = createContext({});
@@ -17,7 +18,11 @@ function DataProvider({ children }){
   // Consume la Api
     const pexelsApi = async () => {
         try {
-          const peticion = await axios.get(`https://api.pexels.com/v1/search?query=${searchText}`)
+          const peticion = await axios.get(`https://api.pexels.com/v1/search?query=${searchText}`, {
+               headers: {
+                Authorization: API_KEY
+              }
+          })
           const result = peticion
           setData(result.data)
           console.log(datas)
