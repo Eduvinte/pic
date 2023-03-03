@@ -17,19 +17,19 @@ function DataProvider({ children }){
 
   // Consume la Api
     const pexelsApi = async () => {
-        try {
-          const peticion = await axios.get(`https://api.pexels.com/v1/search?query=${searchText}`, {
-               headers: {
-                Authorization: API_KEY
-              }
-          })
-          const result = peticion
-          setData(result.data)
-          console.log(datas)
-        } catch (e) {
-          console.log(e)
-        }
+  try {
+    const response = await axios.get(`https://api.pexels.com/v1/search?query=${searchText}`, {
+      headers: {
+        Authorization: API_KEY
       }
+    });
+    const result = response.data;
+    setData(result);
+    console.log(result);
+  } catch (error) {
+    console.log(error);
+  }
+};
 
     // Ejecuta una sola vez la función pexelsApi
       useEffect(() => {
