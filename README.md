@@ -1,5 +1,5 @@
 # Link para acceder a la página web
-https://startling-alpaca-ef2515.netlify.app/favorites
+https://startling-alpaca-ef2515.netlify.app
 
 
 # Getting Started with Create React App
